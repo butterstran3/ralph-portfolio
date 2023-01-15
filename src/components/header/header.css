@@ -1,0 +1,58 @@
+header {
+    height: 10vh;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header__container {
+    display: flex;
+    text-align: center;
+    position: fixed;
+    justify-content: space-between;
+    background: white;
+}
+
+.title__container {
+    padding: 1rem;
+}
+
+.title__container a {
+    font-size: 2.5rem;
+}
+
+.pages__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.3rem 1.5rem; 
+}
+
+.pages__container a {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.socials__container {
+    padding: 2rem 1rem;
+}
+
+.socials__container a {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+div a.active {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 8vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header__container {
+        max-height: 3rem;
+    }
+}

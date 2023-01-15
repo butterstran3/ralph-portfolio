@@ -1,0 +1,75 @@
+.container.contact__container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    padding: 3rem 0 4rem 0;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0;
+    background: #EEEEEE;
+    border: transparent;
+    resize: none;
+    color: black;
+}
+
+.name-input:focus {
+    background: white;
+    border: 1px solid;
+}
+
+.email-input:focus {
+    background: white;
+    border: 1px solid;
+}
+
+textarea:focus {
+    background: white;
+    border: 1px solid;
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: black;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0;
+    cursor: pointer;
+    border: 1px solid;
+    transition: var(--transition);
+    background: white;
+    font-size: larger;
+    font-family: 'Dosis', sans-serif;
+}
+
+.btn:hover {
+    background: #144272;
+    color: white;
+    border-color: transparent;
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px) {
+    form {
+        width: 75%;
+    }
+}
+
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+    form {
+        width: 80%;
+    }
+}
