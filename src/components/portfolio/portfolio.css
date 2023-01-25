@@ -10,6 +10,34 @@
     cursor: pointer;
 }
 
+.portfolio__item-image {
+    position: relative;
+    transition-delay: 0ms;
+}
+
+.view__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.portfolio__item-image:hover img {
+    opacity: 0.5;
+    transition-delay: 0ms;
+}
+
+.portfolio__item-image:hover a {
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.portfolio__item-image:not(:hover) a {
+    z-index: -1;
+    transition-duration: 0ms;
+}
+
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     .portfolio__container {

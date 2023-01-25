@@ -23,7 +23,7 @@ header {
 .pages__container {
     display: flex;
     justify-content: space-between;
-    padding: 2.3rem 1.5rem; 
+    padding: 1.8rem 1.5rem; 
 }
 
 .pages__container a {
@@ -44,6 +44,62 @@ div a.active {
     text-decoration: underline;
 }
 
+.modal-btn {
+    width: max-content;
+    display: inline-block;
+    color: black;
+    padding: 1.5rem 1.5rem 0.7rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+    background: white;
+    font-size: x-large;
+}
+
+.modal-content__container {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    background: white;
+}
+
+.mobile-pages__container {
+    text-align: center;
+    padding-top: 15rem;
+}
+
+.mobile-work {
+    padding-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.mobile-about {
+    font-size: 2rem;
+}
+
+.mobile-socials__container {
+    padding-top: 19rem;
+}
+
+.mobile-socials__container a {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.mobile-header__container {
+    display: flex;
+    text-align: center;
+    position: fixed;
+    justify-content: space-between;
+    background: white;
+    
+}
+
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     header {
@@ -53,6 +109,10 @@ div a.active {
 
 @media screen and (max-width: 600px) {
     .header__container {
-        max-height: 3rem;
+        max-height: 4rem;
+    }
+
+    .title__container a {
+        font-size: 30px;
     }
 }
